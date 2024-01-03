@@ -1,9 +1,9 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
-        $('body').css({"--header":document.querySelector('header').clientHeight + 'px'})
+        $('body').css({ "--header": document.querySelector('header').clientHeight + 'px' })
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
                 $('.navbar .dropdown').on('mouseover', function () {
@@ -17,9 +17,19 @@
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
+
+
+        $(window).scroll(function () {
+            if (window.scrollY > 100) {
+                $('body').addClass('sticky__header')
+            } else {
+                $('body').removeClass('sticky__header')
+
+            }
+        })
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -29,7 +39,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -48,12 +58,12 @@
         items: 1,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
     });
-    
+
 })(jQuery);
 
