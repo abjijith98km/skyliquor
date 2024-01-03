@@ -1,10 +1,19 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FB5B21;
+    --primary: #c96e13;
     --secondary: #BDBDBF;
     --light: #F4F5F8;
     --dark: #222429;
 }
+@font-face {
+    font-family: 'Niagara Solid';
+    src: url('../fonts/NiagaraSolid-Reg.woff2') format('woff2'),
+        url('../fonts/NiagaraSolid-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
@@ -77,7 +86,7 @@ h6,
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Oswald', sans-serif;
     margin-right: 30px;
-    padding: 40px 0;
+    padding: 30px 0;
     color: var(--light);
     font-size: 17px;
     text-transform: uppercase;
@@ -124,8 +133,8 @@ h6,
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .bg-hero {
@@ -218,4 +227,33 @@ h6,
     .credit {
         background: var(--primary);
     }
+}
+.carousel-item{
+    height: calc(100dvh - var(--header));
+}
+.font-niagara{
+    font-family: 'Niagara Solid';
+    font-weight: normal !important;
+}
+.btn__cta{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+.bg-creole{
+    background-color: #140b02 !important;
+}
+.bg-dark-ebony{
+    background-color: #3c2104 !important;
+}
+.bg-braken{
+    background-color: #502d07 !important;
+}
+.bg-meteor{
+    background-color: #c96e13 !important;
+}
+.text-meteor{
+    color: #c96e13 !important;
+}
+.font-normal{
+font-weight: normal !important;
 }

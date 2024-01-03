@@ -3,6 +3,7 @@
     
     // Dropdown on mouse hover
     $(document).ready(function () {
+        $('body').css({"--header":document.querySelector('header').clientHeight + 'px'})
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
                 $('.navbar .dropdown').on('mouseover', function () {
