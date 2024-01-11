@@ -503,3 +503,6 @@ padding:  0px;
     width: 100%;
     display: block;
 }
+.navbar-toggler:focus{
+    box-shadow: none;
+}
