@@ -335,6 +335,7 @@ object-fit: cover;
 }
  section {
      padding: 100px 0;
+     overflow: hidden;
 }
  .three__column_icon img{
      width: 100%;
@@ -435,6 +436,7 @@ object-fit: contain;
   
   padding: 25px 10px;
   transition: .2s all ease-in-out;
+  max-width: 100%;
   
 
 }
@@ -488,6 +490,9 @@ padding:  0px;
 .bg-hero h1{
     font-size: 4rem;
 }
+.blog-item .img-container{
+    aspect-ratio: 16/12;
+}
 }
 .team-item >.rounded > img{
     width: 100% !important;
@@ -505,4 +510,7 @@ padding:  0px;
 }
 .navbar-toggler:focus{
     box-shadow: none;
+}
+.about__us{
+    overflow: hidden;
 }
